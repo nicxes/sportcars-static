@@ -1,0 +1,88 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video autoplay muted loop>
+          <source src="assets/videos/header.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/images/CzEogSl.png" />
+
+        <div class="content">
+          <h1>2023 Camry</h1>
+          <h2>Cure for the common commute.</h2>
+
+          <div>
+            <ul>
+              <li>
+                $309
+                <span>
+                  month
+                </span>
+              </li>
+              <li>
+                36
+                <span>
+                  mos
+                </span>
+              </li>
+              <li>
+                $3,608
+                <span>due at signing</span>
+              </li>
+            </ul>
+            <div>
+              <button>Learn more</button>
+              <button>Explore Camry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://images.ebizautos.media/Foundation/Sites/14248/AccountTemplate/images/about-us.jpg" />
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <script>
+      const swiper = new Swiper('.swiper', {
+          // If we need pagination
+          pagination: {
+              el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+              el: '.swiper-scrollbar',
+          },
+      });
+  </script>
+</body>
+</html>

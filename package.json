@@ -1,0 +1,22 @@
+{
+  "name": "sportcars-generator",
+  "version": "1.0.0",
+  "description": "A simple html and css files generation to insert on iframes or tags",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc assets/less/main.less > assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicxes/sportcars-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicxes/sportcars-generator/issues"
+  },
+  "homepage": "https://github.com/nicxes/sportcars-generator#readme",
+  "devDependencies": {
+    "less": "^4.1.3"
+  }
+}
