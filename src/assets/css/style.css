@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+:root {
+  --swiper-theme-color: #C72F1D;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe0qMImSLYBIv1o4X1M8cfe6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9iB_5q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc8GBv5q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc8aBf5q.ttf) format('truetype');
+}
+.swiper {
+  height: calc(100vh - 100px);
+}
+.swiper .swiper-slide {
+  position: relative;
+}
+.swiper .swiper-slide video,
+.swiper .swiper-slide img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.swiper .swiper-slide .content {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  padding: 60px 0;
+}
+.swiper .swiper-slide .content h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+}
+.swiper .swiper-slide .content h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:before,
+.swiper-button-prev:before {
+  font-size: 20px !important;
+}
