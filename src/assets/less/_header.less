@@ -1,7 +1,7 @@
 .swiper {
   .swiper-slide {
     position: relative;
-    video, img {
+    & > video, & > img {
       position: absolute;
       top: 0;
       right: 0;
@@ -21,6 +21,58 @@
       height: 200px;
       background: linear-gradient(180deg,rgba(0,0,0,0.8),transparent);
       z-index: 2;
+    }
+    .overlay-full {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      background: rgba(0,0,0,0.6);
+      z-index: 2;
+    }
+    .content-centered {
+      position: relative;
+      height: -moz-available; /* WebKit-based browsers will ignore this. */
+      height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+      height: fill-available;
+      z-index: 3;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 0;
+      img {
+        height: 120px;
+      }
+      h1 {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 66px;
+      }
+      h2 {
+        color: #df3622;
+        font-size: 32px;
+        font-weight: 800;
+        text-align: center;
+      }
+      h4 {
+        color: #fff;
+        margin: 12px 0;
+      }
+      p {
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+      }
     }
     .content {
       position: relative;
