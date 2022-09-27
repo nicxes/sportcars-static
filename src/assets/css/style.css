@@ -55,11 +55,29 @@ body {
   width: 100%;
   object-fit: cover;
 }
+.swiper .swiper-slide .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 2;
+}
 .swiper .swiper-slide .content {
   position: relative;
-  height: 100%;
-  z-index: 2;
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  z-index: 3;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .swiper .swiper-slide .content h1 {
   color: #fff;
@@ -72,6 +90,32 @@ body {
   font-size: 32px;
   font-weight: 800;
   text-align: center;
+}
+.swiper .swiper-slide .content .pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.swiper .swiper-slide .content .pricing ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.swiper .swiper-slide .content .pricing ul li {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.swiper .swiper-slide .content .pricing a {
+  display: inline-block;
+  border-radius: 16px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  font-family: 'Nunito Sans';
+  padding: 10px 24px;
 }
 .swiper-button-next,
 .swiper-button-prev {
