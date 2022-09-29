@@ -1,0 +1,25 @@
+.locations {
+  position: relative;
+  height: 400px;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    & div:first-child {
+      background: #0e0e0e;
+      padding: 40px;
+      h3 {
+        color: #fff;
+        font-size: 32px;
+      }
+    }
+    & div:last-child {
+      background: #000;
+      padding: 40px;
+      h3 {
+        color: #fff;
+        font-size: 32px;
+      }
+    }
+  }
+}
