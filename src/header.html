@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<!-- Slider main container -->
+<header class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="overlay-full"></div>
+
+      <video autoplay muted loop>
+        <source src="assets/videos/header.mp4" type="video/mp4">
+      </video>
+
+      <div class="content-centered">
+        <img src="https://images.ebizautos.media/foundation/sites/14248/AccountTemplate/images/logo-about.png" alt="Sport Cars Miami" />
+        <h1>Sport Cars Miami</h1>
+        <h2>Luxury Classic Exotic Cars</h2>
+        <h4>1300 N State Road 7 Hollywood, FL 33021</h4>
+        <p>Sport Cars Miami is a one of a kind first class pre-owned vehicles dealership. Our extensive partnership network and our flexible financing options allow us to offer the widest selection of both off-lease and new car trades at exceptional values. Looking for a high quality vehicle? You’ve come to the right place.</p>
+        <a href="https://sportcarsmiamifl.cms.dealer.com/all-inventory/" target="_top">
+          View All Inventory
+        </a>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="overlay"></div>
+      <img src="assets/images/header-2.png" />
+
+      <div class="content">
+        <div>
+          <h1>2023 Camry</h1>
+          <h2>Cure for the common commute.</h2>
+        </div>
+
+        <div class="pricing">
+          <ul>
+            <li>
+              $309
+              <span>
+                month
+              </span>
+            </li>
+            <li>
+              36
+              <span>
+                mos
+              </span>
+            </li>
+            <li>
+              $3,608
+              <span>due at signing</span>
+            </li>
+          </ul>
+          <div>
+            <a>Learn more</a>
+            <a>Explore Camry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="overlay"></div>
+      <img src="https://images.ebizautos.media/Foundation/Sites/14248/AccountTemplate/images/about-us.jpg" />
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</header>
+
+<script>
+	const swiper = new Swiper('.swiper', {
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+</script>
