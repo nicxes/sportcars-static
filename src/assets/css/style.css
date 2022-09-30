@@ -37,11 +37,11 @@ body {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc8aBf5q.ttf) format('truetype');
 }
-.swiper .swiper-slide {
+.header .swiper-slide {
   position: relative;
 }
-.swiper .swiper-slide > video,
-.swiper .swiper-slide > img {
+.header .swiper-slide > video,
+.header .swiper-slide > img {
   position: absolute;
   top: 0;
   right: 0;
@@ -52,7 +52,7 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.swiper .swiper-slide .overlay {
+.header .swiper-slide .overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -61,7 +61,7 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent);
   z-index: 2;
 }
-.swiper .swiper-slide .overlay-full {
+.header .swiper-slide .overlay-full {
   position: absolute;
   top: 0;
   right: 0;
@@ -70,7 +70,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
-.swiper .swiper-slide .content-centered {
+.header .swiper-slide .content-centered {
   position: relative;
   height: -moz-available;
   /* WebKit-based browsers will ignore this. */
@@ -87,33 +87,33 @@ body {
   margin: 0 auto;
   padding: 30px 0;
 }
-.swiper .swiper-slide .content-centered img {
+.header .swiper-slide .content-centered img {
   height: 120px;
 }
-.swiper .swiper-slide .content-centered h1 {
+.header .swiper-slide .content-centered h1 {
   color: #fff;
   font-size: 64px;
   font-weight: 800;
   text-align: center;
   line-height: 66px;
 }
-.swiper .swiper-slide .content-centered h2 {
+.header .swiper-slide .content-centered h2 {
   color: #df3622;
   font-size: 32px;
   font-weight: 800;
   text-align: center;
 }
-.swiper .swiper-slide .content-centered h4 {
+.header .swiper-slide .content-centered h4 {
   color: #fff;
   margin: 12px 0;
 }
-.swiper .swiper-slide .content-centered p {
+.header .swiper-slide .content-centered p {
   color: #fff;
   font-size: 18px;
   text-align: center;
   margin-bottom: 30px;
 }
-.swiper .swiper-slide .content-centered a {
+.header .swiper-slide .content-centered a {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -122,7 +122,7 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 12px 40px;
 }
-.swiper .swiper-slide .content {
+.header .swiper-slide .content {
   position: relative;
   height: -moz-available;
   /* WebKit-based browsers will ignore this. */
@@ -137,36 +137,36 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.swiper .swiper-slide .content h1 {
+.header .swiper-slide .content h1 {
   color: #fff;
   font-size: 64px;
   font-weight: 800;
   text-align: center;
 }
-.swiper .swiper-slide .content h2 {
+.header .swiper-slide .content h2 {
   color: #fff;
   font-size: 32px;
   font-weight: 800;
   text-align: center;
 }
-.swiper .swiper-slide .content .pricing {
+.header .swiper-slide .content .pricing {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.swiper .swiper-slide .content .pricing ul {
+.header .swiper-slide .content .pricing ul {
   list-style: none;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.swiper .swiper-slide .content .pricing ul li {
+.header .swiper-slide .content .pricing ul li {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
 }
-.swiper .swiper-slide .content .pricing a {
+.header .swiper-slide .content .pricing a {
   display: inline-block;
   border-radius: 16px;
   background: #fff;
@@ -290,4 +290,12 @@ body {
   display: inline-block;
   padding: 12px 40px;
   margin-top: 20px;
+}
+.brands {
+  position: relative;
+  height: 100px;
+}
+.brands img {
+  width: 100%;
+  max-width: 200px;
 }
