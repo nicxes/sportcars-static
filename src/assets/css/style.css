@@ -294,8 +294,33 @@ body {
 .brands {
   position: relative;
   height: 100px;
+  padding: 40px 20px;
 }
 .brands img {
   width: 100%;
   max-width: 200px;
+}
+.cards {
+  position: relative;
+  padding: 20px;
+}
+.cards .container {
+  padding: 0 40px;
+}
+.cards .grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cards .grid h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.cards .grid img {
+  width: 100%;
+  transition: all 150ms ease-in-out;
+}
+.cards .grid img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

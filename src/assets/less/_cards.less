@@ -1,0 +1,24 @@
+.cards {
+  position: relative;
+  padding: 20px;
+  .container {
+    padding: 0 40px;
+  }
+  .grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    h5 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      transition: all 150ms ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}
