@@ -88,30 +88,15 @@ body {
   padding: 30px 0;
 }
 .header .swiper-slide .content-centered img {
-  height: 120px;
+  height: 160px;
 }
 .header .swiper-slide .content-centered h1 {
   color: #fff;
-  font-size: 64px;
+  font-size: 42px;
   font-weight: 800;
   text-align: center;
-  line-height: 66px;
-}
-.header .swiper-slide .content-centered h2 {
-  color: #df3622;
-  font-size: 32px;
-  font-weight: 800;
-  text-align: center;
-}
-.header .swiper-slide .content-centered h4 {
-  color: #fff;
-  margin: 12px 0;
-}
-.header .swiper-slide .content-centered p {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 30px;
+  line-height: 84px;
+  margin-bottom: 20px;
 }
 .header .swiper-slide .content-centered a {
   color: #fff;
@@ -237,6 +222,7 @@ body {
   color: #C72F1D;
   font-size: 42px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .locations .grid div .content p {
   color: #fff;
