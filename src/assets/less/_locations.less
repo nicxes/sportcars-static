@@ -5,6 +5,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    @media (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
     div {
       position: relative;
       display: flex;
@@ -12,6 +15,9 @@
       justify-content: center;
 
       transition: all 200ms ease-in-out;
+      @media (max-width: 425px) {
+        height: 310px;
+      }
       &:hover {
         .overlay {
           background: rgba(0,0,0,0.2);
@@ -44,6 +50,9 @@
           font-size: 42px;
           font-weight: bold;
           margin-bottom: 20px;
+          @media (max-width: 425px) {
+            text-align: center;
+          }
         }
         p {
           color: #fff;
