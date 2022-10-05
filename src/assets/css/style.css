@@ -98,6 +98,11 @@ body {
   line-height: 84px;
   margin-bottom: 20px;
 }
+@media (max-width: 425px) {
+  .header .swiper-slide .content-centered h1 {
+    font-size: 32px;
+  }
+}
 .header .swiper-slide .content-centered a {
   color: #fff;
   font-size: 18px;
@@ -122,6 +127,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 425px) {
+  .header .swiper-slide .content {
+    padding: 24px 0 40px 0;
+  }
+}
 .header .swiper-slide .content h1 {
   color: #000;
   font-size: 64px;
@@ -129,11 +139,21 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 425px) {
+  .header .swiper-slide .content h1 {
+    font-size: 28px;
+  }
+}
 .header .swiper-slide .content h2 {
   color: #000;
   font-size: 32px;
   font-weight: 800;
   text-align: center;
+}
+@media (max-width: 425px) {
+  .header .swiper-slide .content h2 {
+    font-size: 20px;
+  }
 }
 .header .swiper-slide .content .pricing {
   display: flex;
@@ -144,7 +164,13 @@ body {
 .header .swiper-slide .content .pricing h3 {
   color: #e71304;
   font-size: 42px;
+  text-align: center;
   margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .header .swiper-slide .content .pricing h3 {
+    font-size: 28px;
+  }
 }
 .header .swiper-slide .content .pricing a {
   display: inline-block;
@@ -164,6 +190,12 @@ body {
   border-radius: 50% !important;
   width: 50px !important;
   height: 50px !important;
+}
+@media (max-width: 425px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 .swiper-button-next:after,
 .swiper-button-prev:after,
