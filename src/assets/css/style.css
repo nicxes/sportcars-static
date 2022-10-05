@@ -90,6 +90,11 @@ body {
 .header .swiper-slide .content-centered img {
   height: 160px;
 }
+@media (max-width: 425px) {
+  .header .swiper-slide .content-centered img {
+    margin-bottom: 20px;
+  }
+}
 .header .swiper-slide .content-centered h1 {
   color: #fff;
   font-size: 42px;
@@ -101,6 +106,7 @@ body {
 @media (max-width: 425px) {
   .header .swiper-slide .content-centered h1 {
     font-size: 32px;
+    line-height: 48px;
   }
 }
 .header .swiper-slide .content-centered a {
@@ -334,4 +340,29 @@ body {
 .cards .grid img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+.reviews {
+  position: relative;
+  padding: 80px 0;
+}
+.reviews .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.reviews ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 425px) {
+  .reviews ul {
+    flex-direction: column;
+  }
+}
+.reviews ul li img {
+  width: 100%;
+  max-width: 400px;
 }
