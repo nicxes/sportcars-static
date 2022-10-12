@@ -17,7 +17,8 @@
     align-items: baseline;
     gap: 20px;
     @media (max-width: 425px) {
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
     li {
       img {
@@ -25,6 +26,11 @@
         max-width: 400px;
         @media (max-width: 425px) {
           max-width: 200px;
+        }
+      }
+      @media (max-width: 425px) {
+        &:nth-child(3) {
+          height: 170px;
         }
       }
     }
