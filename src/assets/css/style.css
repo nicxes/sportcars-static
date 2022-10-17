@@ -52,9 +52,21 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.header .swiper-slide > video.only-image,
-.header .swiper-slide > img.only-image {
+.header .swiper-slide > video.only-image.mobile,
+.header .swiper-slide > img.only-image.mobile {
   object-fit: contain;
+}
+@media (min-width: 426px) {
+  .header .swiper-slide > video.only-image.mobile,
+  .header .swiper-slide > img.only-image.mobile {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .header .swiper-slide > video.only-image.desktop,
+  .header .swiper-slide > img.only-image.desktop {
+    display: none;
+  }
 }
 .header .swiper-slide .overlay {
   position: absolute;
