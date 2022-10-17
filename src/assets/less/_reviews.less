@@ -20,6 +20,7 @@
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 1fr;
+      gap: 0px;
     }
     li {
       img {
@@ -30,9 +31,11 @@
           max-width: 200px;
         }
       }
-      @media (max-width: 425px) {
-        &:nth-child(3) img {
-          height: 170px;
+      &:last-child {
+        grid-column: 1/-1;
+        text-align: center;
+        img {
+          width: auto;
         }
       }
     }
