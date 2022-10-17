@@ -41,7 +41,8 @@ body {
   position: relative;
 }
 .header .swiper-slide > video,
-.header .swiper-slide > img {
+.header .swiper-slide > img,
+.header .swiper-slide > a > img {
   position: absolute;
   top: 0;
   right: 0;
@@ -53,18 +54,21 @@ body {
   object-fit: cover;
 }
 .header .swiper-slide > video.only-image.mobile,
-.header .swiper-slide > img.only-image.mobile {
+.header .swiper-slide > img.only-image.mobile,
+.header .swiper-slide > a > img.only-image.mobile {
   object-fit: contain;
 }
 @media (min-width: 426px) {
   .header .swiper-slide > video.only-image.mobile,
-  .header .swiper-slide > img.only-image.mobile {
+  .header .swiper-slide > img.only-image.mobile,
+  .header .swiper-slide > a > img.only-image.mobile {
     display: none;
   }
 }
 @media (max-width: 425px) {
   .header .swiper-slide > video.only-image.desktop,
-  .header .swiper-slide > img.only-image.desktop {
+  .header .swiper-slide > img.only-image.desktop,
+  .header .swiper-slide > a > img.only-image.desktop {
     display: none;
   }
 }
