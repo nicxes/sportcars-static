@@ -23,6 +23,14 @@
       gap: 10px;
     }
     li {
+      @media (max-width: 425px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          display: block;
+        }
+      }
       img {
         width: 100%;
         max-width: 210px;
