@@ -473,7 +473,7 @@ body {
 .header-madhouse {
   position: relative;
   background-size: cover;
-  height: calc(100vh - 300px);
+  height: 100%;
 }
 .header-madhouse .overlay {
   position: absolute;
@@ -525,4 +525,64 @@ body {
   max-width: 800px;
   margin: 0 auto;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.benefits-madhouse {
+  position: relative;
+  padding: 60px 0;
+  background: rgba(199, 47, 29, 0.02);
+}
+.benefits-madhouse .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.benefits-madhouse h3 {
+  color: #000;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 84px;
+}
+.benefits-madhouse .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.benefits-madhouse .content article {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.benefits-madhouse .content article img {
+  display: block;
+  margin-bottom: 10px;
+}
+.benefits-madhouse .content article h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.benefits-madhouse .aditional {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.benefits-madhouse .aditional article {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.benefits-madhouse .aditional article img {
+  display: block;
+  width: 100px;
+  margin: 0 auto 20px auto;
+}
+.benefits-madhouse .aditional article h5 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
 }
