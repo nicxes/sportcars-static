@@ -470,3 +470,59 @@ body {
   width: 100%;
   height: 100%;
 }
+.header-madhouse {
+  position: relative;
+  background-size: cover;
+  height: calc(100vh - 300px);
+}
+.header-madhouse .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+.header-madhouse .center {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-madhouse .logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.header-madhouse .logos span svg {
+  fill: #fff;
+  height: 40px;
+  width: 40px;
+}
+.header-madhouse .logos img {
+  max-height: 140px;
+}
+.header-madhouse h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 84px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+.header-madhouse p {
+  color: #ccc;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
