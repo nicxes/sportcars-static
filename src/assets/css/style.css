@@ -547,7 +547,7 @@ body {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 6px #000000;
 }
 @media (max-width: 430px) {
   .header-madhouse p {
@@ -556,6 +556,40 @@ body {
 }
 .header-madhouse a {
   color: #fff;
+}
+.header-madhouse .discount {
+  background: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C72F1D;
+  border-radius: 4px;
+  padding: 4px 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.header-madhouse .discount a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+.header-madhouse .discount a svg {
+  fill: #000;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.header-madhouse .discount:hover {
+  color: #fff;
+  background: #000;
+  border-color: #000;
+}
+.header-madhouse .discount:hover a {
+  color: #fff;
+}
+.header-madhouse .discount:hover a svg {
+  fill: white;
 }
 .header-madhouse .btn {
   color: #fff;

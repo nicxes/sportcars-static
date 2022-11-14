@@ -77,6 +77,40 @@
   a {
     color: #fff;
   }
+  .discount {
+    background: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C72F1D;
+    border-radius: 4px;
+    padding: 4px 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    a {
+      color: #000;
+      text-decoration: none;
+      display: flex;
+      svg {
+        fill: #000;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+    &:hover {
+      color: #fff;
+      background: #000;
+      border-color: #000;
+      a {
+        color: #fff;
+        svg {
+          fill: white;
+        }
+      }
+    }
+  }
   .btn {
     color: #fff;
     font-size: 18px;
