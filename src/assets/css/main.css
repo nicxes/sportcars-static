@@ -816,6 +816,57 @@ body {
   fill: #ffce00;
   height: 20px;
 }
+#referrals {
+  position: relative;
+}
+#referrals .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+}
+#referrals .head img {
+  height: 76px;
+  margin-right: 10px;
+}
+#referrals .head h1 {
+  color: #000;
+  font-weight: 300;
+  opacity: 0.9;
+}
+#referrals .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #f4f4f4;
+}
+#referrals .grid img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+}
+#referrals .grid .content {
+  padding: 48px;
+}
+#referrals .grid .content h1 {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+#referrals .grid .content p {
+  margin-bottom: 24px;
+}
+#referrals .grid .content a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background: #C72F1D;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
 footer {
   position: relative;
   background: #000;
