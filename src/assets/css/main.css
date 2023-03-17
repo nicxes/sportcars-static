@@ -888,6 +888,9 @@ body {
   padding: 0;
   list-style: none;
 }
+#referrals .container .faq ul li {
+  border-left: 4px solid #C72F1D;
+}
 #referrals .container .faq ul li h6 {
   font-size: 20px;
   background: #f4f4f4;
