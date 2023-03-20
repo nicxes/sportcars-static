@@ -16,14 +16,24 @@
     }
     .content {
       padding: 48px;
+      @media only screen and (max-width: 430px) {
+        padding: 24px;
+      }
       h1 {
         font-size: 42px;
         line-height: 50px;
         margin-bottom: 10px;
         max-width: 600px;
+        @media only screen and (max-width: 430px) {
+          font-size: 28px;
+          line-height: 32px;
+        }
       }
       p {
         margin-bottom: 24px;
+        @media only screen and (max-width: 430px) {
+          margin-bottom: 12px
+        }
       }
       a {
         color: #fff;
@@ -35,6 +45,9 @@
 
         padding: 10px 20px;
         display: inline-block;
+        @media only screen and (max-width: 430px) {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -51,11 +64,12 @@
       justify-content: space-between;
       @media only screen and (max-width: 430px) {
         flex-direction: column;
+        padding: 60px 0 30px 0;
       }
       li {
         text-align: center;
         @media only screen and (max-width: 430px) {
-          max-width: 600px;
+          max-width: 280px;
         }
         img {
           margin-bottom: 10px;
@@ -68,12 +82,20 @@
       }
     }
     h5 {
+      @media only screen and (max-width: 430px) {
+        color: #C72F1D;
+        font-size: 23px;
+        margin-bottom: 40px;
+      }
       font-size: 20px;
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
     .faq {
+      @media only screen and (max-width: 430px) {
+        padding: 0 24px;
+      }
       ul {
         margin: 0;
         padding: 0;
@@ -85,6 +107,9 @@
             padding: 20px;
             margin-bottom: 10px;
             border-left: 4px solid #C72F1D;
+            @media only screen and (max-width: 430px) {
+              font-size: 18px;
+            }
           }
           p {
             padding: 20px;
