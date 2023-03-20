@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "lessc src/assets/less/main.less > src/assets/css/style.css",
-    "watch": "less-watch-compiler src/assets/less src/assets/css style.less"
+    "watch": "less-watch-compiler src/assets/less src/assets/css main.less"
   },
   "repository": {
     "type": "git",

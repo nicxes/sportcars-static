@@ -826,6 +826,11 @@ body {
   align-items: center;
   background: #f4f4f4;
 }
+@media only screen and (max-width: 430px) {
+  #referrals .grid {
+    grid-template-columns: 1fr;
+  }
+}
 #referrals .grid img {
   object-fit: cover;
   width: 100%;
@@ -866,8 +871,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 430px) {
+  #referrals .container ul.steps {
+    flex-direction: column;
+  }
+}
 #referrals .container ul.steps li {
   text-align: center;
+}
+@media only screen and (max-width: 430px) {
+  #referrals .container ul.steps li {
+    max-width: 600px;
+  }
 }
 #referrals .container ul.steps li img {
   margin-bottom: 10px;
