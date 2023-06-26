@@ -1,0 +1,84 @@
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<!-- Slider main container -->
+<header class="header swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="overlay-full"></div>
+
+      <video autoplay muted loop>
+        <source src="assets/videos/header-compress.mp4" type="video/mp4">
+      </video>
+
+      <div class="content-centered">
+        <img src="https://images.ebizautos.media/foundation/sites/14248/AccountTemplate/images/logo-about.png" alt="Sport Cars Lux" />
+        <h1>Luxury Classic Exotic Cars</h1>
+        <a href="https://sportcarslux.com/all-inventory/" target="_top">
+          View All Inventory
+        </a>
+      </div>
+    </div>
+
+    <!--
+    <div class="swiper-slide">
+      <img src="assets/images/header-1.jpg" />
+
+      <div class="content">
+        <div>
+          <h1>PRE-Auction Super Sale</h1>
+          <h2>You'll Pay The Same Low Price That Dealers Pay At The Auction!</h2>
+        </div>
+
+        <div class="pricing">
+          <div>
+            <a href="https://www.sportcars.miami/specialsdetails.htm" target="_top">View Inventory</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="assets/images/header-2-m.png" class="only-image mobile" />
+      <img src="assets/images/header-2.png" class="only-image desktop" />
+
+      <div class="content">
+        <div>
+
+        </div>
+        <div class="pricing">
+          <div>
+            <a href="https://www.sportcars.miami/all-inventory/index.htm" target="_top">View Inventory</a>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</header>
+
+<script>
+	const swiper = new Swiper('.swiper', {
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+</script>
