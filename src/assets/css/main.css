@@ -466,6 +466,11 @@ body {
 #maps {
   overflow: hidden;
 }
+#maps .container.fix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
 #maps iframe {
   width: 100%;
   height: 100%;
