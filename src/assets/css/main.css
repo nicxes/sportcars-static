@@ -471,6 +471,11 @@ body {
   grid-template-columns: 1fr 1fr;
   height: 100%;
 }
+@media only screen and (max-width: 430px) {
+  #maps .container.fix {
+    grid-template-columns: 1fr;
+  }
+}
 #maps iframe {
   width: 100%;
   height: 100%;
