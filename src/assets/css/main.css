@@ -239,6 +239,10 @@ body {
 .swiper-button-prev:before {
   font-size: 20px !important;
 }
+.header .cta-buttons {
+  display: flex;
+  gap: 20px;
+}
 .locations {
   position: relative;
   height: 470px;
