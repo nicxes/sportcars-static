@@ -266,7 +266,10 @@ body {
 }
 @media (max-width: 428px) {
   .locations .grid div {
-    height: 310px;
+    height: 980px;
+  }
+  .locations .grid div p {
+    font-size: 16px !important;
   }
 }
 .locations .grid div:hover .overlay {
