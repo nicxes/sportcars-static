@@ -243,6 +243,12 @@ body {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 428px) {
+  .header .cta-buttons {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
 .locations {
   position: relative;
   height: 863px;
