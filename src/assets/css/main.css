@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
 }
 html,
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 :root {
   --swiper-theme-color: #C72F1D;
@@ -92,7 +95,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
 .header .swiper-slide .content-centered {
@@ -144,12 +147,13 @@ body {
 }
 .header .swiper-slide .content-centered a {
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   text-decoration: none;
   background: #C72F1D;
+  border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 12px 40px;
+  padding: 14px 39px;
 }
 .header .swiper-slide .content {
   position: relative;
@@ -382,6 +386,7 @@ body {
   display: inline-block;
   padding: 12px 40px;
   margin-top: 20px;
+  border-radius: 10px;
 }
 .brands {
   position: relative;
