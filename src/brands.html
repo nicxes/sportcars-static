@@ -1,71 +1,96 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-<link rel="stylesheet" href="assets/css/main.css" />
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.brands {
+  font-family: 'Inter', sans-serif;
+}
+</style>
 
 <!-- Slider main container -->
 <section class="brands">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="assets/images/logos/acura.webp" />
-      </div>
+  <div class="container mx-auto px-6">
+    
+    <h2 class="text-[#4D4C4C] text-[40px] font-semibold text-center mb-10">
+      Select your favorite brand
+    </h2>
 
-      <div class="swiper-slide">
-        <img src="assets/images/logos/alfa-romeo.webp" />
-      </div>
+    <ul class="grid grid-cols-[repeat(auto-fit,120px)] justify-center items-center gap-x-[18px] gap-y-[18px] mb-[18px]">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/acura.webp" />     
+      </li>
 
-      <div class="swiper-slide">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
         <img src="assets/images/logos/audi.webp" />
-      </div>
+      </li>
 
-      <div class="swiper-slide">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
         <img src="assets/images/logos/bmw.png" />
-      </div>
+      </li>
 
-      <div class="swiper-slide">
-        <img src="assets/images/logos/bentley.webp" />
-      </div>
-
-      <div class="swiper-slide">
-        <img src="assets/images/logos/buick.webp" />
-      </div>
-
-      <div class="swiper-slide">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
         <img src="assets/images/logos/cadillac.webp" />
-      </div>
+      </li>
 
-      <div class="swiper-slide">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
         <img src="assets/images/logos/chevrolet.webp" />
-      </div>
+      </li>
 
-      <div class="swiper-slide">
-        <img src="assets/images/logos/gmc.webp" />
-      </div>
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/ferrari.png" />
+      </li>
 
-      <div class="swiper-slide">
-        <img src="assets/images/logos/honda.webp" />
-      </div>
-
-      <div class="swiper-slide">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
         <img src="assets/images/logos/ford.webp" />
-      </div>
-    </div>
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/gmc.webp" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/honda.webp" />
+      </li>
+    </ul>
+
+    <ul class="grid grid-cols-[repeat(auto-fit,120px)] justify-center items-center gap-x-[18px] gap-y-[18px] md:gap-y-[28px]">
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/jeep.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/mercedesbenz.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/mini.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/nissan.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/porsche.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/ram.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/tesla.png" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/toyota.webp" />
+      </li>
+
+      <li class="bg-[#F6F6F6] rounded-xl shadow flex items-center justify-center h-full">
+        <img src="assets/images/logos/volkswagen.png" />
+      </li>
+    </ul>
+
   </div>
 </section>
-
-<script>
-	const swiper = new Swiper('.swiper', {
-		autoplay: {
-			delay: 5000,
-		},
-		slidesPerView: 2,
-		spaceBetween: 10,
-		breakpoints: {
-			431: {
-				slidesPerView: 7,
-				spaceBetween: 30
-			},
-    }
-	});
-</script>
